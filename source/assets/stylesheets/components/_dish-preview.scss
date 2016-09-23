@@ -1,0 +1,18 @@
+$_dish-preview-gutter: 1.25rem 0.75rem;
+$_dish-preview-title-color: blue;
+
+.c-dish-preview {
+  border-bottom: $base-border;
+  padding: $_dish-preview-gutter;
+}
+
+.c-dish-preview__title {
+  color: $_dish-preview-title-color;
+  font-size: modular-scale(0);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.c-dish-preview__figure {
+  max-width: 80px;
+}

@@ -1,0 +1,20 @@
+$_media-gutter: 1rem;
+
+.p-media {
+  display: flex;
+}
+
+.p-media__figure {
+  line-height: 0;
+  margin-right: $_media-gutter;
+
+  .p-media--reverse & {
+    margin-left: $_media-gutter;
+    margin-right: 0;
+    order: 1;
+  }
+}
+
+.p-media__body {
+  flex: 1;
+}

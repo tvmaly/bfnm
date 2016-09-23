@@ -1,6 +1,5 @@
 .c-container {
   @include margin(null auto);
-  @include padding(null 1rem);
   background-color: $white;
-  max-width: 35rem;
+  max-width: 50rem;
 }
