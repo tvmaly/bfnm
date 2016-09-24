@@ -1,0 +1,12 @@
+.c-cost-indicator {
+  display: inline-block;
+}
+
+.c-cost-indicator__step {
+  color: tint($base-font-color, 75%);
+  margin-right: -0.2em;
+}
+
+.c-cost-indicator__step--active {
+  color: tint($base-font-color, 25%);
+}

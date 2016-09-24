@@ -1,9 +1,13 @@
 $_dish-preview-gutter: 1.25rem 0.75rem;
-$_dish-preview-title-color: blue;
+$_dish-preview-title-color: $action-color;
 
 .c-dish-preview {
   border-bottom: $base-border;
   padding: $_dish-preview-gutter;
+}
+
+.c-dish-preview__figure {
+  max-width: 80px;
 }
 
 .c-dish-preview__title {
@@ -13,6 +17,7 @@ $_dish-preview-title-color: blue;
   text-decoration: underline;
 }
 
-.c-dish-preview__figure {
-  max-width: 80px;
+.c-dish-preview__metadata {
+  color: tint($base-font-color, 25%);
+  font-size: modular-scale(-1);
 }

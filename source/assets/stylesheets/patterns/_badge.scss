@@ -1,0 +1,9 @@
+.p-badge {
+  background-color: $secondary-background-color;
+  border-radius: $base-border-radius;
+  color: $base-font-color;
+  display: inline-block;
+  font-size: modular-scale(-1);
+  line-height: 1;
+  padding: modular-scale(-5) modular-scale(-3) modular-scale(-6);
+}
