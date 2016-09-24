@@ -4,6 +4,10 @@ $_dish-preview-title-color: $action-color;
 .c-dish-preview {
   border-bottom: $base-border;
   padding: $_dish-preview-gutter;
+
+  &:first-child {
+    border-top: $base-border;
+  }
 }
 
 .c-dish-preview__figure {
