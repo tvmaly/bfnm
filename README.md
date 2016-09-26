@@ -5,7 +5,7 @@
 1. Get the code:
 
   ```
-  git clone https://github.com/tysongach/best-food-near-me.git
+  git clone https://github.com/tysongach/bfnm.git
   ```
 
 1. Set up your machine:
