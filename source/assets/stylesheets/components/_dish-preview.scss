@@ -5,7 +5,7 @@ $_dish-preview-title-color: $action-color;
   border-bottom: $base-border;
   padding: $_dish-preview-gutter;
 
-  &:first-child {
+  &:first-of-type {
     border-top: $base-border;
   }
 }

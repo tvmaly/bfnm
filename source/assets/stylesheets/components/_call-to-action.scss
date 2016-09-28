@@ -1,0 +1,13 @@
+$_call-to-action-gutter: 1.25rem 0.75rem;
+
+.c-call-to-action {
+  padding: $_call-to-action-gutter;
+}
+
+.c-call-to-action__call {
+  text-align: center;
+}
+
+.c-call-to-action__action {
+  text-align: center;
+}
