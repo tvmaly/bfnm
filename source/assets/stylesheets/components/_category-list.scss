@@ -13,6 +13,7 @@
 }
 
 .c-category-list__item-title {
+  @include padding(modular-scale(2) null);
   @include position(absolute, 50% 0.75rem null);
   color: $white;
   display: block;
