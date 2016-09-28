@@ -1,0 +1,67 @@
+$_button-background-color: $white;
+$_button-background-color-hover: $white;
+$_button-text-color: $action-color;
+$_button-text-color-hover: tint($action-color, 30%);
+
+$_primary-button-background-color: $action-color;
+$_primary-button-background-color-hover: tint($_primary-button-background-color, 10%);
+$_primary-button-text-color: contrast-switch($_primary-button-background-color);
+$_primary-button-text-color-hover: contrast-switch($_primary-button-background-color-hover);
+
+.c-button,
+#{$all-buttons} {
+  appearance: none;
+  background-color: $_button-background-color;
+  border: 0;
+  border-radius: $base-border-radius;
+  box-shadow: 0 4px 6px rgba(mix($dark-gray, $action-color, 80%), 0.1),
+              0 1px 3px rgba($black, 0.08);
+  color: $_button-text-color;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: modular-scale(-1);
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+  line-height: 2.5;
+  padding: 0 modular-scale(0);
+  text-align: center;
+  text-decoration: none;
+  transition: background-color $base-duration $base-timing,
+              box-shadow $base-duration $base-timing,
+              color $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    background-color: $_button-background-color-hover;
+    box-shadow: 0 7px 14px rgba(mix($dark-gray, $action-color, 80%), 0.1),
+                0 3px 6px rgba($black, 0.08);
+    color: $_button-text-color-hover;
+  }
+
+  &:disabled,
+  &[disabled] {
+    &,
+    &:hover,
+    &:focus {
+      background-color: tint($light-gray, 40%);
+      box-shadow: none;
+      color: shade($light-gray, 20%);
+      cursor: not-allowed;
+    }
+  }
+}
+
+.c-button--primary {
+  background-color: $_primary-button-background-color;
+  color: $_primary-button-text-color;
+
+  &:hover,
+  &:focus {
+    background-color: $_primary-button-background-color-hover;
+    color: $_primary-button-text-color-hover;
+  }
+}

@@ -1,5 +1,5 @@
 .c-container {
   @include margin(null auto);
-  background-color: $white;
+  background-color: shade($white, 2%);
   max-width: 50rem;
 }

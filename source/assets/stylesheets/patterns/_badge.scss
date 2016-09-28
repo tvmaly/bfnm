@@ -3,7 +3,7 @@
   border-radius: $base-border-radius;
   color: $base-font-color;
   display: inline-block;
-  font-size: modular-scale(-1);
-  line-height: 1;
-  padding: modular-scale(-5) modular-scale(-3) modular-scale(-6);
+  font-size: modular-scale(-2);
+  line-height: 1.5;
+  padding: 0 modular-scale(-5);
 }
