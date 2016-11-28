@@ -8,7 +8,7 @@
   width: 50%;
 
   &::before {
-    @include padding(50% 0.75rem null);
+    @include padding(50% $small-spacing null);
     content: "";
     display: block;
     height: 0;

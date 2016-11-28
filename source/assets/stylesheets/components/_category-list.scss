@@ -14,7 +14,7 @@
 
 .c-category-list__item-title {
   @include padding(modular-scale(2) null);
-  @include position(absolute, 50% 0.75rem null);
+  @include position(absolute, 50% $small-spacing null);
   color: $white;
   display: block;
   font-size: modular-scale(0);

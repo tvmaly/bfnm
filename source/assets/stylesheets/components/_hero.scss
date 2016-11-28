@@ -1,0 +1,33 @@
+.c-hero {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: $base-spacing $small-spacing;
+  position: relative;
+
+  &::after {
+    @include position(absolute, 0);
+    background-color: rgba($black, 0.5);
+    content: "";
+    z-index: 1;
+  }
+}
+
+.c-hero__headline {
+  margin-bottom: $base-spacing;
+}
+
+.c-hero__sub-headline {
+  margin-bottom: $small-spacing;
+}
+
+.c-hero__headline,
+.c-hero__sub-headline {
+  color: $white;
+  position: relative;
+  z-index: 2;
+
+  a {
+    color: $white;
+  }
+}
