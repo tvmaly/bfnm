@@ -10,7 +10,8 @@
   <body>
     <div class="c-container">
       <header class="c-app-header
-                     u-flex u-flex-items-center
+                     u-flex
+                     u-flex-items-center
                      u-flex-justify-space-between"
               role="banner">
         <%= yield_content :app_header %>
@@ -19,11 +20,17 @@
       <main role="main">
         <%= yield %>
       </main>
-      <footer class="c-app-footer
-                     u-flex u-flex-items-center
-                     u-flex-justify-space-between"
-              role="contentinfo">
-        &copy; 2016 Best Food Near Me, Inc.
+
+      <footer class="c-app-footer" role="contentinfo">
+        <span class="c-app-footer__copyright">
+          &copy; 2016 Best Food Near Me, Inc.
+        </span>
+        <a class="c-app-footer__link" href="#">
+          Privacy Policy
+        </a>
+        <a class="c-app-footer__link" href="#">
+          Terms of Service
+        </a>
       </footer>
     </div>
   </body>

@@ -2,3 +2,13 @@
   color: tint($base-font-color, 50%);
   padding: $small-spacing;
 }
+
+.c-app-footer__link {
+  color: tint($base-font-color, 50%);
+  margin-right: $small-spacing;
+}
+
+.c-app-footer__copyright {
+  display: block;
+  margin-right: auto;
+}
