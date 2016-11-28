@@ -67,8 +67,8 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
+  @include margin($small-spacing ($small-spacing / 2) $small-spacing 0);
   display: inline;
-  margin-right: $small-spacing / 2;
 }
 
 [type="file"] {
