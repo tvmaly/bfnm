@@ -1,0 +1,8 @@
+.c-sub-nav {
+  border-bottom: $base-border;
+  padding: $small-spacing;
+}
+
+.c-sub-nav__item--active {
+  text-decoration: underline;
+}

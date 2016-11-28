@@ -65,3 +65,17 @@ $_primary-button-text-color-hover: contrast-switch($_primary-button-background-c
     color: $_primary-button-text-color-hover;
   }
 }
+
+.c-button--naked {
+  background-color: transparent;
+  box-shadow: none;
+  color: $_button-text-color;
+  padding: 0;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    box-shadow: none;
+    color: $_button-text-color-hover;
+  }
+}
