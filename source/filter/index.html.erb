@@ -1,0 +1,70 @@
+<% content_for :app_header do %>
+<div class=" u-flex u-flex-items-center u-flex-justify-space-between">
+  <a href="/category-results" class="c-button c-button--naked">
+    Cancel
+  </a>
+  Filter
+  <a href="/category-results" class="c-sub-nav__item c-button c-button--naked">
+    Apply
+  </a>
+</div>
+<% end %>
+
+<div class="c-filter__section">
+  <label for="meal">Meal</label>
+  <select id="meal" name="meal">
+    <option value="value1">Value 1</option>
+    <option value="value2" selected>Breakfast</option>
+    <option value="value3">Value 3</option>
+  </select>
+</div>
+
+<div class="c-filter__section">
+  <label for="cuisine">Cuisine</label>
+  <select id="cuisine" name="cuisine">
+    <option value="value1">Value 1</option>
+    <option value="value2" selected>All</option>
+    <option value="value3">Value 3</option>
+  </select>
+</div>
+
+<div class="c-filter__section">
+  <fieldset>
+    <legend>Tastes</legend>
+    <label>
+      <input type="checkbox" name="checkboxes" value="check-1" checked>Sweet
+    </label>
+    <label>
+      <input type="checkbox" name="checkboxes" value="check-2" checked>Sour
+    </label>
+    <label>
+      <input type="checkbox" name="checkboxes" value="check-3">Salty
+    </label>
+    <label>
+      <input type="checkbox" name="checkboxes" value="check-4">Bitter
+    </label>
+    <label>
+      <input type="checkbox" name="checkboxes" value="check-5">Umami
+    </label>
+    <label>
+      <input type="checkbox" name="checkboxes" value="check-6">Fatty taste
+    </label>
+  </fieldset>
+</div>
+
+<div class="c-filter__section">
+  <fieldset>
+    <legend>Good for Kids</legend>
+    <label>
+      <input type="radio" name="radio-buttons" value="radio-1">Yes
+    </label>
+    <label>
+      <input type="radio" name="radio-buttons" value="radio-2">No
+    </label>
+  </fieldset>
+</div>
+
+<div class="c-filter__section">
+  <label for="keywords">Keywords</label>
+  <input id="keywords" type="text">
+</div>

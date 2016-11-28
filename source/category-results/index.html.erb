@@ -1,5 +1,5 @@
-<% content_for :page_title do %>
-Breakfast
+<% content_for :app_header do %>
+<h1>Breakfast</h1>
 <% end %>
 
 <section class="c-sub-nav u-flex u-flex-justify-space-between">
@@ -11,7 +11,7 @@ Breakfast
   </button>
   <button class="c-sub-nav__item c-button c-button--naked">Newest</button>
   <button class="c-sub-nav__item c-button c-button--naked">Location</button>
-  <button class="c-sub-nav__item c-button">Filter</button>
+  <a href="/filter" class="c-sub-nav__item c-button">Filter</a>
 </section>
 
 <section class="c-call-to-action">

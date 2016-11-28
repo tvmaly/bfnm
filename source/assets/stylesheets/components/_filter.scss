@@ -1,0 +1,6 @@
+$_filter-gutter: $base-spacing $small-spacing;
+
+.c-filter__section {
+  border-bottom: $base-border;
+  padding: $_filter-gutter;
+}
