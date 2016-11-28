@@ -3,6 +3,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: $base-spacing $small-spacing;
+}
+
+.c-hero--with-overlay {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 
   &::after {
@@ -10,6 +16,17 @@
     background-color: rgba($black, 0.5);
     content: "";
     z-index: 1;
+  }
+}
+
+.c-hero--square {
+  padding: 0;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 0;
+    padding-top: 100%;
   }
 }
 

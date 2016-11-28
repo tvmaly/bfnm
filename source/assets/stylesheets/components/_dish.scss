@@ -1,0 +1,13 @@
+$_dish-gutter: $base-spacing $small-spacing;
+
+.c-dish {
+  padding: $_dish-gutter;
+}
+
+.c-dish__name {
+  margin-bottom: $small-spacing;
+}
+
+.c-dish__call-to-action {
+  margin-bottom: $small-spacing;
+}
