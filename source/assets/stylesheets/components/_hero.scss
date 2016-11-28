@@ -3,13 +3,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: $base-spacing $small-spacing;
+  position: relative;
 }
 
 .c-hero--with-overlay {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 
   &::after {
     @include position(absolute, 0);

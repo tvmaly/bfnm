@@ -1,6 +1,17 @@
 $_dish-gutter: $base-spacing $small-spacing;
 
-.c-dish {
+.c-dish__add-image-button {
+  @include position(absolute, 0);
+  color: $white;
+
+  &:focus,
+  &:hover {
+    color: $white;
+  }
+}
+
+.c-dish__body {
+  border-bottom: $base-border;
   padding: $_dish-gutter;
 }
 
